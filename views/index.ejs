@@ -1,0 +1,21 @@
+<h3>Bienvenido a <%=title%></h3>
+La pagina donde puede registrar contactos..
+
+
+
+<table  width="500" border="2">
+<tr>
+<td>NUMERO</td> <td>NOMBRE</td> <td>APELLIDO PATERNO</td> <td>APELLIDO MATERNO</td> <td>TELEFONO PERSONAL</td> <td>TELEFONO DOMICILIO</td> <td>CUMPLEAÑOS</td>
+<% var i; for(i=0; i< contactos.length; i++) { %>
+   <tr><td><%= i %></td><td><%= contactos[i].nombres %>  
+    </td><td><%= contactos[i].apellidoPaterno %>
+    </td><td><%= contactos[i].apellidoMaterno %>
+    </td><td><%= contactos[i].telefonoPersonal %>
+    </td><td><%= contactos[i].telefonoDomicilio %>
+    </td><td><%= contactos[i].cumpleanos %></td>
+    </tr>
+<% } %>
+
+ 
+
+</table>
